@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:indeterminate="false"
-                android:max="12"
+                android:max="10"
                 android:maxHeight="50dp"
                 android:progress="0" />
 

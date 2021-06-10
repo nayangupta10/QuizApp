@@ -50,28 +50,28 @@
                 android:textSize="13sp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-              >
+                android:layout_marginBottom="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                   android:id="@+id/etName"
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
-                    android:textSize="13sp"
+                    android:lines="1"
+                    android:textColor="#7A8089"
                     android:textColorHint="#363A43"
-                    android:textColor="#7A8089"/>
+                    android:textSize="13sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Start"/>
+                android:text="Start" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
