@@ -12,13 +12,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         btnStart.setOnClickListener {
             if (etName.text.toString().isEmpty())
                 Toast.makeText(this, "Please enter your name!", Toast.LENGTH_SHORT).show()
-            else
+            else {
                 startActivity(Intent(this, QuizQuestionActivity::class.java))
+                finish()
+            }
         }
     }
 }
